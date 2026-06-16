@@ -43,12 +43,12 @@ from backend.app.services import (
 )
 
 ERROR_RESPONSES = {
-    400: {"model": ErrorResponse},
-    401: {"model": ErrorResponse},
-    403: {"model": ErrorResponse},
-    404: {"model": ErrorResponse},
-    409: {"model": ErrorResponse},
-    422: {"model": ErrorResponse},
+    400: {"model": ErrorResponse, "description": "Bad request"},
+    401: {"model": ErrorResponse, "description": "Authentication required"},
+    403: {"model": ErrorResponse, "description": "Forbidden"},
+    404: {"model": ErrorResponse, "description": "Not found"},
+    409: {"model": ErrorResponse, "description": "Conflict"},
+    422: {"model": ErrorResponse, "description": "Validation failed"},
 }
 
 router = APIRouter(prefix="/v1", tags=["v1"])

@@ -893,7 +893,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -903,7 +903,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -923,7 +923,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -943,7 +943,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "List Audit Logs",
@@ -1028,7 +1028,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1038,7 +1038,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1058,7 +1058,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1078,7 +1078,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "List Fraud Flags",
@@ -1182,7 +1182,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1192,7 +1192,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1212,7 +1212,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1232,7 +1232,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "List Ledger Entries",
@@ -1323,7 +1323,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1333,7 +1333,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1353,7 +1353,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1373,7 +1373,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "Create Ledger Entry",
@@ -1438,7 +1438,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1448,7 +1448,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1468,7 +1468,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1488,7 +1488,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "Reconcile Ledger",
@@ -1561,7 +1561,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1571,7 +1571,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1591,7 +1591,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1611,7 +1611,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "List Legacy Transactions",
@@ -1660,7 +1660,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1670,7 +1670,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1690,7 +1690,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1710,7 +1710,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "Get Slo Dashboard",
@@ -1759,7 +1759,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1769,7 +1769,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1789,7 +1789,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1809,7 +1809,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "Get Schema Versions",
@@ -1913,7 +1913,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -1923,7 +1923,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -1943,7 +1943,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -1963,7 +1963,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "List Webhook Events",
@@ -2054,7 +2054,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -2064,7 +2064,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -2084,7 +2084,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -2104,7 +2104,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "Ingest Webhook Event",
@@ -2162,7 +2162,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -2172,7 +2172,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -2192,7 +2192,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -2212,7 +2212,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "Replay Failed Event",
@@ -2271,7 +2271,7 @@
                 }
               }
             },
-            "description": "Bad Request"
+            "description": "Bad request"
           },
           "401": {
             "content": {
@@ -2281,7 +2281,7 @@
                 }
               }
             },
-            "description": "Unauthorized"
+            "description": "Authentication required"
           },
           "403": {
             "content": {
@@ -2301,7 +2301,7 @@
                 }
               }
             },
-            "description": "Not Found"
+            "description": "Not found"
           },
           "409": {
             "content": {
@@ -2321,7 +2321,7 @@
                 }
               }
             },
-            "description": "Unprocessable Content"
+            "description": "Validation failed"
           }
         },
         "summary": "Replay Failed Events",
