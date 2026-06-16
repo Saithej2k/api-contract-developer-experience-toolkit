@@ -14,5 +14,3 @@ dist/
 coverage/
 playwright-report/
 test-results/
-docs/openapi.json
-client/src/generated/

@@ -1,0 +1,24 @@
+{
+  "name": "@api-contract-toolkit/client",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenAPI-generated TypeScript client helpers for the API Contract Toolkit.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "generate": "openapi-typescript ../docs/openapi.json -o src/generated/schema.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --runInBand",
+    "playwright:run": "playwright test",
+    "test:playwright": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.0.0",
+    "jest": "^30.2.0",
+    "openapi-typescript": "^7.10.1",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  }
+}
