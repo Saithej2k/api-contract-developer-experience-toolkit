@@ -1,0 +1,53 @@
+name: contract-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  contract-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: client/package-lock.json
+
+      - name: Install backend dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install --upgrade pip
+          .venv/bin/python -m pip install -r backend/requirements.txt
+
+      - name: Run backend contract tests
+        run: .venv/bin/python -m pytest backend/tests -q
+
+      - name: Export OpenAPI
+        run: .venv/bin/python scripts/export_openapi.py
+
+      - name: Install client dependencies
+        run: npm --prefix client ci
+
+      - name: Generate TypeScript client
+        run: npm --prefix client run generate
+
+      - name: Verify generated artifacts
+        run: git diff --exit-code docs/openapi.json client/src/generated/schema.ts
+
+      - name: Build and test client
+        run: |
+          npm --prefix client run build
+          npm --prefix client test
+
+      - name: Run Playwright API coverage
+        env:
+          PYTHON_BIN: ${{ github.workspace }}/.venv/bin/python
+        run: npm --prefix client run test:playwright
